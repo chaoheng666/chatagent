@@ -1,1 +1,22 @@
-﻿api.env
+﻿# Local environment files
+api.env
+.env
+
+# Binaries for programs and plugins
+/bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE/editor directories
+.idea/
+.vscode/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Vendor and build
+/vendor/
+api.env
