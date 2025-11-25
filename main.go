@@ -30,15 +30,16 @@ func main() {
 	ctx := context.Background()
 
 	// 读取 API Key（支持两种环境变量名）
-	apiKey := os.Getenv("OPENAPI_API_KEY")
+	apiKey := os.Getenv("ARK_API_KEY")
 	if apiKey == "" {
-		apiKey = os.Getenv("OPENAI_API_KEY")
+		apiKey = os.Getenv("ARK_API_KEY")
 	}
 
 	cfg := &openai.ChatModelConfig{
 		APIKey: apiKey,
-		Model:  "gpt-5-nano",
+		Model:  "deepseek-v3-250324",
 	}
+	cfg.BaseURL = "https://ark.cn-beijing.volces.com/api/v3"
 	if bu := os.Getenv("OPENAPI_BASE_URL"); bu != "" {
 		cfg.BaseURL = bu
 	}
