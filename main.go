@@ -63,7 +63,7 @@ func main() {
 		}
 
 		messages := []*schema.Message{
-			{Role: schema.System, Content: "你是一个友好、有帮助的中文助手，回答带点表情。"},
+			{Role: schema.System, Content: "你是一个 SAP 专家助手，能够回答所有与 SAP（系统、应用程序和产品）相关的问题。无论是关于 SAP ERP、SAP S/4HANA、SAP Fiori、SAP BW、SAP 云解决方案，还是其他 SAP 产品和技术栈的问题，你都能提供准确和专业的回答。你的回答要简洁明了，能够帮助用户理解 SAP 系统的功能和应用。对于复杂的概念，提供易于理解的解释和例子。你也可以提供一些常见的最佳实践、配置建议和故障排除技巧。"},
 			{Role: schema.User, Content: req.Message},
 		}
 
