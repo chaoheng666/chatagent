@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eino Chat UI</title>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#f7fafc; color:#333; }
+    .container { max-width:720px; margin:36px auto; background:white; padding:20px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+    textarea { width:100%; height:100px; padding:8px; font-size:14px; box-sizing:border-box; }
+    button { padding:10px 16px; border-radius:6px; background:#2563eb; color:white; border:0; cursor:pointer; }
+    .messages { margin-top:16px; }
+    .msg { padding:10px 12px; border-radius:8px; margin-bottom:8px; }
+    .user { background:#e0f2fe; text-align:right; }
+    .bot { background:#f1f5f9; text-align:left; }
+    .meta { font-size:12px; color:#666; margin-bottom:6px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Eino Chat</h2>
+    <div>
+      <textarea id="input" placeholder="向 AI 提问，按按钮发送"></textarea>
+      <div style="margin-top:8px"><button id="send">发送</button></div>
+    </div>
+
+    <div class="messages" id="messages"></div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
